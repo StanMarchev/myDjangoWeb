@@ -17,7 +17,7 @@ def sign_up(request):
             fm.save()
     else:
         fm = SignUpForm()
-    return render(request,'fiveaside_login/fiveaside_singup.html',{'form':fm})
+    return render(request, 'fiveaside_login/../../templates/fiveaside_singup/fiveaside_singup.html', {'form':fm})
 
 
 #Login
@@ -44,7 +44,7 @@ def user_login(request):
 #Profile
 def user_profile(request):
     if request.user.is_authenticated:
-        return render(request,'fiveaside_login/profile.html',{'name':request.user})
+        return render(request, 'fiveaside_login/../../templates/fiveaside_profile/profile.html', {'name':request.user})
     else:
         return HttpResponseRedirect('/login/')
 

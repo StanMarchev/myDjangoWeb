@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # myapps
     'myDjangoWeb.common',
-    'myDjangoWeb.fiveaside'
+    'myDjangoWeb.fiveaside',
+    'myDjangoWeb.fiveaside_login',
 
 
 

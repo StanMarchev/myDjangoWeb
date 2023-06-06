@@ -24,5 +24,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", include("myDjangoWeb.common.urls")),
     path('fiveaside/', include('myDjangoWeb.fiveaside.urls')),
+    path('fiveaside/login/', include('myDjangoWeb.fiveaside_login.urls'))
 
 ]
